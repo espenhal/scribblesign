@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Signature Pad demo</title>
@@ -157,24 +158,43 @@
             #signature-pad {
                 display: none;
             }
-            #tilt-device-message {
+            #tilt-device {
                 display: block;
             }
         }
 
         @media screen and (orientation:landscape) {
             #signature-pad {
-                display: block;
-            }
-            #tilt-device-message {
                 display: none;
             }
+            #tilt-device {
+                display: -webkit-flex;
+                display: flex;
+            }
+        }
+
+        #tilt-device {
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #tilt-device-message {
+            font-size: 3em;
+            font-weight: bold;
+            color: #C3C3C3;
         }
     </style>
+    <link href="styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet" />
 <link href="styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet"/></head>
+
 <body onselectstart="return false">
-    <div id="tilt-device-message" class="m-signature-pad">
-        Apparatusen din må være i landskapsmodus for å kunne signere. Vennligst snu apparatusen din.
+    <div id="tilt-device" class="m-signature-pad">
+        <span id="tilt-device-message">
+            Vennligst hold <i>device</i> i landskapsmodus
+        </span>
     </div>
     <div id="signature-pad" class="m-signature-pad">
         <div class="m-signature-pad--body">
@@ -237,5 +257,10 @@
             }
         });
     </script>
+    <script type="text/javascript" src="inline.6ece33e845f28a8a228a.bundle.js"></script>
+    <script type="text/javascript" src="polyfills.07685bca73161be59257.bundle.js"></script>
+    <script type="text/javascript" src="vendor.376619ba394049a765e4.bundle.js"></script>
+    <script type="text/javascript" src="main.d35cd0c98102ac8a03c2.bundle.js"></script>
 <script type="text/javascript" src="inline.6ece33e845f28a8a228a.bundle.js"></script><script type="text/javascript" src="polyfills.07685bca73161be59257.bundle.js"></script><script type="text/javascript" src="vendor.376619ba394049a765e4.bundle.js"></script><script type="text/javascript" src="main.d35cd0c98102ac8a03c2.bundle.js"></script></body>
+
 </html>
