@@ -159,17 +159,17 @@
                 display: none;
             }
             #tilt-device {
-                display: block;
+                display: -webkit-flex;
+                display: flex;
             }
         }
 
         @media screen and (orientation:landscape) {
             #signature-pad {
-                display: none;
+                display: block;
             }
             #tilt-device {
-                display: -webkit-flex;
-                display: flex;
+                display: none;
             }
         }
 
@@ -182,7 +182,7 @@
         }
 
         #tilt-device-message {
-            font-size: 3em;
+            font-size: 2em;
             font-weight: bold;
             color: #C3C3C3;
         }
@@ -193,7 +193,7 @@
 <body onselectstart="return false">
     <div id="tilt-device" class="m-signature-pad">
         <span id="tilt-device-message">
-            Vennligst hold <i>device</i> i landskapsmodus
+            hold <i>device</i> i landskapsmodus for å signere
         </span>
     </div>
     <div id="signature-pad" class="m-signature-pad">
